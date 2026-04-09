@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <org.osmdroid.views.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/tvCurrentLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="جاري البحث عن موقعك (GPS)..."
+        android:gravity="center"
+        android:padding="12dp"
+        android:background="#E6FFFFFF"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:elevation="4dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:gravity="center"
+        android:background="@android:color/transparent"> <Button
+        android:id="@+id/btnAddReminder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="إضافة تذكير جديد"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:backgroundTint="#2E7D32"
+        android:textColor="#FFFFFF"
+        android:elevation="6dp"
+        android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/btnViewReminders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="عرض قائمة التذكيرات"
+            android:textSize="18sp"
+            android:padding="12dp"
+            android:backgroundTint="#1565C0"
+            android:textColor="#FFFFFF"
+            android:elevation="6dp"
+            android:layout_marginBottom="15dp"/>
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="تسجيل الخروج"
+            android:textSize="16sp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:backgroundTint="#C62828"
+            android:textColor="#FFFFFF"
+            android:elevation="6dp"
+            android:layout_marginBottom="20dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
